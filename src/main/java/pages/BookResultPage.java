@@ -16,52 +16,54 @@ public class BookResultPage extends ProjectSpecificWrappers {
 		}
 	}
 	
-	public String getISBN(){
+	public BookResultPage getISBN(){
 		String ISBN = getTextByXpath("//div[@id='ISBN-wrapper']//following-sibling::div/label");
 		System.out.println(ISBN);
-		return ISBN;
+		return this;
 	}
 	
-	public String getTitle(){
+	public BookResultPage getTitle(){
 		String Title = getTextByXpath("//div[@id='title-wrapper']//following-sibling::div/label");
 		System.out.println(Title);
-		return Title;
+		return this;
 	}
 	
-	public String getSubTitle(){
+	public BookResultPage getSubTitle(){
 		String subTitle = getTextByXpath("//div[@id='subtitle-wrapper']//following-sibling::div/label");
 		System.out.println(subTitle);
-		return subTitle;
+		return this;
 	}
 	
-	public String getAuthor(){
+	public BookResultPage getAuthor(){
 		String Author = getTextByXpath("//div[@id='author-wrapper']//following-sibling::div/label");
 		System.out.println(Author);
-		return Author;
+		return this;
 	}
 	
-	public String getPublisher(){
+	public BookResultPage getPublisher(){
 		String Publisher = getTextByXpath("//div[@id='publisher-wrapper']//following-sibling::div/label");
 		System.out.println(Publisher);
-		return Publisher;
+		return this;
 	}
 	
-	public String getTotalPages(){
+	public BookResultPage getTotalPages(){
 		String totalPages = getTextByXpath("//div[@id='pages-wrapper']//following-sibling::div/label");
 		System.out.println(totalPages);
-		return totalPages;
+		return this;
 	}
 	
-	public String getDescription(){
+	public BookResultPage getDescription(){
 		String Description = getTextByXpath("//div[@id='description-wrapper']//following-sibling::div/label");
 		System.out.println(Description);
-		return Description;
+		return this;
 	}
 	
-	public String getWebsite(){
+
+	
+	public BookResultPage getWebsite(){
 		String Website = getTextByXpath("//div[@id='website-wrapper']//following-sibling::div/label");
 		System.out.println(Website);
-		return Website;
+		return this;
 	}
 	
 	public BooksPage clickBackToBookStore(){
@@ -76,10 +78,10 @@ public class BookResultPage extends ProjectSpecificWrappers {
 		return this;		
 	}	
 	
-	public String getUserName(){
+	public BookResultPage getUserName(){
 		String userName = getTextByXpath("//label[contains(text(),'User Name :')]//following-sibling::label");
 		System.out.println(userName);
-		return userName;
+		return this;
 	}
 	
 	public LoginPage clickLogOut(){
